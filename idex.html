@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espaço Alencar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="imagens/Logo Alencar.png" alt="Logo do Espaço" width="180px">
+        <nav>
+            <div class="itemnav"><a href="idex.html">Home</a></div>
+            <div class="itemnav"><a href="#meio">Sobre Nós</a></div>
+            <div class="itemnav"><a href="#atendimento" >Contados</a></div>
+        </nav>
+    </header>
+    
+    <div class="inicio">
+        <p>
+            Bem vindo ao Espaço Alencar
+        </p>
+            <div class="big">
+                <img id="grande" src="imagens/BIG.jpeg" alt="" >
+            </div>
+    </div>
+    <div id="meio">
+        <div class="meio">
+            <div class="texmeio">
+                <h1>
+                   Nossa historia
+                </h1>
+                <p>
+                    Em 2015 decidimos entrar para o ramo de festas! E assim, surgiu o Alencar Festas & Eventos! Um lugar que realizaria outros sonhos! E começamos a conhecer novos clientes, novos amigos e ver no olhar de cada um a satisfação plena nessas parcerias. Dia após dia estamos nos aprimorando para a consolidação no mercado de festas. Com esse objetivo, buscamos dia a dia melhorar cada vez mais. Hoje, agradamos e encantamos nossos clientes e amigos, com nosso carisma e comprometimento.  </p> <br>
+                <img src="imagens/foto03.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="nosso">
+        <h1>
+            Nosso Espaço
+        </h1>
+
+        <h2>
+            Nosso Espaço contem areas estravajantes cheia de verde e ambiente natural
+        </h2>
+
+       <p>
+        Selecione a area
+       </p>
+
+
+        <div id="bloco">
+             <select id="caixa">
+                <option value="gramado">Gramado</option>
+                <option value="salao">Salão</option>
+              </select>
+
+              <button id="mostrarBtn">Demonstrar Area</button>
+
+              <div id="gramado">
+                    <h1> 
+                        Nosso gramado tem tantos m*2 com uma are verde que possui um pergolado aonde
+                        boa parte dos casamentos utilizam ele alem de festas de aniversarios
+                    </h1>
+                <img class="imgani01"  src="imagens/foto03.jpg" alt="">
+                <img class="imgani02" src="imagens/foto02.jpg" alt="">
+               
+              </div>
+
+              <div id="salao">
+                <h1>
+                    Nosso salão tem um espaço de xm*2 com uma media de suporte <br> de 200
+                    pessoas no saão otimo para festas de 15 anos ou casamentos 
+
+                </h1>
+                <img class="imgani01" src="imagens/foto04.jpg" alt="">
+                <img class="imgani02" src="imagens/foto08.jpg" alt="">
+
+              </div>
+
+        </div>
+
+    </div>
+
+    <div class="atendimento" id="atendimento">
+        <img id="foto04" src="imagens/foto-03.jfif" alt="">
+        <div class="alinhar">
+           
+            <h1>
+                Atendimento
+            </h1>
+            <nav>
+                <a href="https://api.whatsapp.com/send/?phone=5562991976246&text=Vim+pelo+link+do+Instagram+&type=phone_number&app_absent=0" target="_blank"><img class="zoom" src="imagens/whatzaplogo.JPEG" alt=""></a>
+                <a href="https://www.instagram.com/alencarfestaseventos/reels/" target="_blank"><img  class="zoom" src="imagens/instagram.JPEG" alt=""></a>
+                <a href="https://www.facebook.com/AlencarEspacoFestaseEventos/" target="_blank"><img class="zoom" src="imagens/facebook.JPEG" alt=""></a>
+            </nav>
+            <p>
+                RUA JC23 QD 27 LT 27 - Res. Jardim Canedo II, 
+                        Sen. Canedo - GO, 75250-322
+            </p>
+
+            <p>
+                OBS: Todos as visitas ao Espaço devem ser agendadas via whatsapp  
+            </p>
+        </div>
+      
+
+
+    </div>
+
+
+    <div class="botão">
+      
+    </div>
+  
+
+   <script>
+       const caixa = document.getElementById("caixa");
+       const gramado = document.getElementById("gramado");
+       const mostrarBtn = document.getElementById("mostrarBtn");
+       const salao = document.getElementById('salao');
+
+       mostrarBtn.addEventListener('click', () => {
+       const opcaoSelecionada = caixa.value;
+
+      gramado.style.display = 'none';
+      salao.style.display = 'none';
+
+      if (opcaoSelecionada === 'gramado') {
+        gramado.style.display ='block';
+      } else if (opcaoSelecionada === 'salao') {
+        salao.style.display = 'block';
+      }
+    });
+   </script>
+</body>
+</html>
